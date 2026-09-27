@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="196dp">
@@ -53,6 +54,7 @@
 
         </FrameLayout>
 
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,11 +64,14 @@
             android:textSize="24sp"
             android:textStyle="bold" />
 
+
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="20dp"
             android:hint="@string/hint_student_id">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -76,11 +81,13 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="20dp"
             android:hint="@string/hint_password"
             app:endIconMode="password_toggle">
@@ -91,6 +98,7 @@
                 android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -118,6 +126,7 @@
 
         </LinearLayout>
 
+
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
@@ -126,10 +135,11 @@
             android:layout_marginEnd="20dp"
             android:text="@string/login" />
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
+            android:gravity="center_vertical"
             android:orientation="horizontal"
             android:padding="20dp">
 
@@ -154,12 +164,14 @@
 
         </LinearLayout>
 
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:text="@string/login_school" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -181,8 +193,20 @@
                 android:textStyle="bold" />
 
         </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnConstraintDemo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:text="Mở ConstraintLayout" />
+
         <include
             layout="@layout/view_profile_card" />
+
     </LinearLayout>
 
 </ScrollView>
